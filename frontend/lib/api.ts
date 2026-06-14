@@ -62,7 +62,7 @@ interface ApiErrorBody {
 }
 
 const API_BASE_URL = (
-  process.env.NEXT_PUBLIC_API_URL ?? "http://devlynix-backend-production.up.railway.app/api"
+  process.env.NEXT_PUBLIC_API_URL ?? "https://devlynix-backend-production.up.railway.app/api"
 ).replace(/\/+$/, "");
 
 export class ApiError extends Error {
