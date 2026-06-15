@@ -60,10 +60,8 @@ interface ApiErrorBody {
   message?: string;
   error?: string;
 }
-
-const API_BASE_URL = (
-  process.env.NEXT_PUBLIC_API_URL ?? "https://devlynix-backend-production.up.railway.app/api"
-).replace(/\/+$/, "");
+const API_BASE_URL =
+  "https://devlynix-backend-production.up.railway.app/api";
 
 export class ApiError extends Error {
   constructor(
