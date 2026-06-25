@@ -169,7 +169,7 @@ export const api = {
   sendMessage(token: string, matchId: number, content: string) {
     return request<Message>(
       `/chat/${matchId}/messages`,
-      { method: "POST", body: JSON.stringify({ content }) },
+      { method: "POST", body: JSON.stringify({ matchId,content }) },
       token,
     );
   },
